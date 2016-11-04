@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Linux - Bash - 101</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/jfig.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,85 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+<section>
+
+<section data-markdown data-background-image="assets/bash-logo.png">
+
+</section>
+
+<section data-markdown>
+# Linux - Bash - 101
+## Working the command line
+</section>
+</section>
+
+<section>
+
+<section data-markdown data-background-image="assets/navigation/StockSnap_KTRST7Z99B.jpg">
+# Navigation
+</section>
+
+<section data-markdown>
+<script type="text/template">
+### How to navigate directories
+
+	pwd
+<!-- .element: class="fragment" data-fragment-index="1" -->
+	ls
+<!-- .element: class="fragment" data-fragment-index="2" -->
+	cd
+<!-- .element: class="fragment" data-fragment-index="3" -->
+Note:
+- pwd : print working directory
+- ls : list
+- cd : change directory
+---
+- ~ : home
+- / : root
+---
+**do** "pwd" - ls comes next
+</script>
+</section>
+
+<section data-markdown>
+
+  pwd
+	/home/test
+
+</section>
+
+<section data-markdown>
+<script type="text/template">
+
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+### ls
+
+	ls -l
+<!-- .element: class="fragment" data-fragment-index="1" -->
+	ls -a
+<!-- .element: class="fragment" data-fragment-index="2" -->
+	ls -la
+<!-- .element: class="fragment" data-fragment-index="3" -->
+
+</script>
+</section>
+
+</section>
+
+
+<section data-markdown>
+# Obrigado!
+
+joaofigueiredo@lcdporto.org
+
+@jfig
+</section>
+
 			</div>
 		</div>
 
@@ -39,6 +116,7 @@
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
+					{ src: 'socket.io/socket.io.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
